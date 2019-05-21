@@ -1,41 +1,34 @@
 {
-  "name": "tiny-secp256k1",
-  "version": "1.1.1",
-  "description": "A tiny secp256k1 native/JS wrapper",
+  "name": "tiny-secp256k1-native",
+  "version": "1.0.0",
+  "description": "A tiny secp256k1 native wrapper",
   "main": "index.js",
   "gypfile": true,
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.0.0"
   },
   "scripts": {
     "build": "node-gyp rebuild",
     "unit": "tape tests/index.js | tap-difflet -p",
-    "test-browser": "browserify tests/index.js > tests/bundle.js",
     "test": "npm run unit"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitcoinjs/tiny-secp256k1.git"
+    "url": "git+https://github.com/bitcoinjs/tiny-secp256k1-native.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitcoinjs/tiny-secp256k1/issues"
+    "url": "https://github.com/bitcoinjs/tiny-secp256k1-native/issues"
   },
-  "homepage": "https://github.com/bitcoinjs/tiny-secp256k1#readme",
+  "homepage": "https://github.com/bitcoinjs/tiny-secp256k1-native#readme",
   "dependencies": {
     "bindings": "^1.3.0",
-    "bn.js": "^4.11.8",
-    "create-hmac": "^1.1.7",
-    "elliptic": "^6.4.0",
     "nan": "^2.13.2"
   },
   "devDependencies": {
     "browserify": "^16.2.2",
     "tap-difflet": "^0.7.1",
     "tape": "^4.9.0"
-  },
-  "browser": {
-    "./index.js": "./js.js"
   }
 }
