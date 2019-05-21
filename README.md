@@ -1,22 +1,24 @@
-# tiny-secp256k1
-[![Build Status](https://travis-ci.org/bitcoinjs/tiny-secp256k1.png?branch=master)](https://travis-ci.org/bitcoinjs/tiny-secp256k1)
-[![NPM](https://img.shields.io/npm/v/tiny-secp256k1.svg)](https://www.npmjs.org/package/tiny-secp256k1)
+# tiny-secp256k1-native
+[![Build Status](https://travis-ci.org/bitcoinjs/tiny-secp256k1-native.png?branch=master)](https://travis-ci.org/bitcoinjs/tiny-secp256k1-native)
+[![NPM](https://img.shields.io/npm/v/tiny-secp256k1-native.svg)](https://www.npmjs.org/package/tiny-secp256k1-native)
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 This library is under development,  and,  like the [secp256k1](https://github.com/bitcoin-core/secp256k1) C library it depends on,  this is a research effort to determine an optimal API for end-users of the bitcoinjs ecosystem.
+
+*This library is the native component of tiny-secp256k1. It is an optional dependency so that npm install will not fail for tiny-secp256k1 and it will fallback to the JS implementation*
 
 ## Installation
 
 ### npm
 
 ``` bash
-npm install tiny-secp256k1
+npm install tiny-secp256k1-native
 ```
 
 ### yarn
 
 ```bash
-yarn add tiny-secp256k1
+yarn add tiny-secp256k1-native
 ```
 
 If you are having problems,  please read the guide at [secp256k1-node](https://github.com/cryptocoinjs/secp256k1-node#installation),  as the build instructions should be exactly the same (and this module is a direct derivation).
@@ -166,7 +168,7 @@ If `strict` is `true`, valid signatures with any of (r, s) values greater than `
 ---
 
 ## Credit
-This is a partially derived work of https://github.com/cryptocoinjs/secp256k1-node, specifically [this commit](https://github.com/bitcoinjs/tiny-secp256k1/commit/03a1d0ab5d61dc05ab42a7e884cf37d628a10724).
+This is a partially derived work of https://github.com/cryptocoinjs/secp256k1-node, specifically [this commit](https://github.com/bitcoinjs/tiny-secp256k1-native/commit/03a1d0ab5d61dc05ab42a7e884cf37d628a10724).
 
 This library uses the native library [secp256k1](https://github.com/bitcoin-core/secp256k1) by the bitcoin-core developers,  including derivatives of its tests and test vectors.
 
